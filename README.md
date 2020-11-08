@@ -8,7 +8,7 @@ First clone project and install dependencies
 
 ```sh
 $ mkdir demo && cd demo
-$ git clone https://github.com/ilkeraltin/demo.git
+$ git clone https://github.com/PriyadarshiniPuja/demo.git
 $ cd demo
 $ npm install
 ```
@@ -24,10 +24,6 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ## to run test cases
 
 \$ npm run test
-
-You can deploy this project to:
-
-- [Heroku](https://www.heroku.com/)
 
 ## Built With
 
