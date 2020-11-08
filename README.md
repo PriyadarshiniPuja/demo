@@ -32,3 +32,4 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## Lighthouse score
 
+https://github.com/PriyadarshiniPuja/demo/blob/main/lighthouse-score.png
