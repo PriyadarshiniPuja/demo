@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
+#root {
+  background-color: #f2f2f2;
+}
+.spacexcontainer {
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  max-width: 1440px;
+  .notfound {
+    font-size: 24px;
+    padding: 100px 0;
+  }
+
+  .heading {
+    font-weight: 600;
+  }
+  .footer {
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #f2f2f2;
+    span {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+  .main-wrap {
+    padding-bottom: 91px;
+
+    .spacex-card {
+      background-color: white;
+      padding: 16px;
+      margin-bottom: 16px;
+      min-height: 420px;
+      border-radius: 8px;
+      .imageWrap {
+        height: 169px;
+        background-color: #f2f2f2;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 16px;
+        img {
+          height: 171px;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+      .description {
+        .title {
+          color: #3c458f;
+          margin-bottom: 16px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .info {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          span {
+            line-height: 18px;
+            font-size: 14px;
+            color: #000000;
+            &:first-child {
+              font-weight: 600;
+              max-width: 120px;
+              width: 120px;
+              vertical-align: top;
+              display: inline-block;
+            }
+            &:last-child {
+              color: #3c458f;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .missions {
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        .mission-id {
+          position: relative;
+          margin-left: 25px;
+          color: #3c458f;
+          &::before {
+            content: '\2022';
+            display: inline-block;
+            left: -16px;
+            position: absolute;
+            top: -4px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .filter-container {
+    background-color: white;
+    padding: 16px;
+    min-width: 215px;
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+    .filters {
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      margin: 0 auto;
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 6px;
+        width: 100%;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -2px;
+          margin: 0 auto;
+          border-bottom: 1px solid #bdbdbd;
+          left: 0;
+          right: 0;
+          @media (max-width: 767px) {
+            width: 55%;
+          }
+        }
+      }
+      .filter-wrap {
+        margin: 0;
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin: 0;
+          width: 80%;
+        }
+        @media (max-width: 767px) {
+          width: 74%;
+        }
+
+        &.filter-year {
+          a {
+            &:last-child {
+              flex: auto;
+              // margin-left: 0;
+              // width: 100%;
+              // text-align: left;
+              flex: auto;
+              @media (max-width: 767px) {
+                margin-left: 16px;
+              }
+            }
+          }
+        }
+        a {
+          margin-right: 32px;
+          margin-bottom: 12px;
+          display: inline-block;
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            margin-right: 0;
+          }
+          &.active,
+          &:focus {
+            outline: none;
+            .btn {
+              background-color: #7eb822;
+            }
+          }
+          &:nth-child(even) {
+            // @media (min-width: 768px) {
+            margin-right: 0;
+            // }
+          }
+          .btn {
+            background-color: #c6df9e;
+            min-width: 55px;
+            font-size: 14px;
+            padding: 0;
+            &:nth-child(2) {
+              margin-right: 0;
+            }
+            @media (max-width: 767px) {
+              min-width: 60px;
+              font-size: 14px;
+              padding: 2px 0;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    .loaderContainer {
+      background: url('../../public/images/loader.gif') 50% 50% no-repeat;
+      height: 80px;
+      width: 80px;
+      position: relative;
+      left: calc(50% - 60px);
+      top: calc(50% - 60px);
+      background-size: 80px 80px;
+    }
+  }
+}
