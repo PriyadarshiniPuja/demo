@@ -29,3 +29,6 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 - [React](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
+
+## Lighthouse score
+
