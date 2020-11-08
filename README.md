@@ -21,7 +21,7 @@ $ npm run dev
 
 Navigate to [http://localhost:3000](http://localhost:3000)
 
-## to run test cases
+## Run test cases
 
 \$ npm run test
 
